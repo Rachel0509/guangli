@@ -1,0 +1,49 @@
+//Media query, suitable for mobile phone terminal
+@media screen and (max-width: 768px){
+    .container{
+        width: auto;
+    }
+    main{
+        padding: 87px 10px 0;
+    }
+    #home{
+        main{
+            padding: 0 10px;
+        }
+        header{
+            .banner{
+                div {
+                    img{
+                        width: 250px;
+                    }
+                    a{
+                        line-height     : 30px;
+                        width           : 170px;
+                    }
+                  }
+    
+                  .item {
+                      font-size: 20px;
+                  }
+            
+                  .cubic {
+                   display: none;
+                  }
+            }
+        }
+    }
+
+    #contact{
+        main{
+            .left {
+                display: none;
+            }
+    
+            .skills {
+                .items{
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}

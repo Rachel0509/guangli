@@ -1,0 +1,146 @@
+//Form page style
+#contact {
+    min-height       : 100vh;
+    background-image : url(../../images/back2.jpg);
+    background-repeat: no-repeat;
+    background-size  : 100% 100%;
+
+    main {
+        margin-bottom: 80px;
+
+        .title {
+            margin-top   : 30px;
+            margin-bottom: 60px;
+
+            h2 {
+                color        : white;
+                text-align   : center;
+                margin-bottom: 30px;
+                font-size    : 30px;
+            }
+
+            p {
+                color     : #D4A2C8;
+                text-align: right;
+                font-size : 20px;
+            }
+        }
+
+        .inner {
+            display: flex;
+        }
+
+        .left {
+            margin-right: 120px;
+        }
+
+        .right {
+            flex-grow: 1;
+
+            .form {
+                display        : flex;
+                justify-content: space-between;
+
+                form {
+                    flex-grow: 1;
+                    .name {
+                        display: flex;
+                        .form-item{
+                            flex-grow: 1;
+                        }
+                    }
+
+                    .form-item {
+                        margin-bottom: 30px;
+
+                        label {
+                            display      : block;
+                            margin-bottom: 8px;
+                            color        : #6365B5;
+                            font-weight  : bold;
+                        }
+
+                        input {
+                            height : 36px;
+                            width  : 90%;
+                            padding: 0 5px;
+
+                            &#firstname {
+                                margin-right: 20px;
+                            }
+
+                            &#email {
+                                width: 60%;
+                            }
+                        }
+
+                        textarea {
+                            padding: 5px;
+                            width  : 100%;
+                        }
+
+                        &.submit {
+                            text-align: right;
+                        }
+
+                        .submit-btn {
+                            margin-top: 20px;
+                            display   : inline-block;
+                            background-color: $btnBackColor;
+                            color           : $btnTextColor;
+                            padding         : 10px 20px;
+                            text-decoration : none;
+                            border-radius   : 20px;
+                            font-size       : 20px;
+                        }
+
+                        .error-msg {
+                            font-size: 13px;
+                            color    : red;
+                            display  : none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .skills {
+            color: white;
+
+            h2 {
+                color        : #AF6E80;
+                margin-bottom: 30px;
+                font-size    : 36px;
+            }
+
+            .items {
+                display        : flex;
+                justify-content: space-between;
+
+                .item-title {
+                    display    : flex;
+                    align-items: center;
+                    height     : 160px;
+
+                    h3 {
+                        font-size   : 28px;
+                        margin-right: 10px;
+                    }
+                }
+
+                .text {
+                    margin-top: 60px;
+
+                    p {
+                        font-size: 25px;
+                        margin   : 20px 0;
+                    }
+                }
+            }
+        }
+
+        .social {
+            text-align: right;
+        }
+    }
+}

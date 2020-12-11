@@ -1,0 +1,124 @@
+// Homepage style
+#home {
+  header {
+    background-image : url(../../images/back1.jpg);
+    background-repeat: no-repeat;
+    background-size  : 100% 100%;
+
+    .banner {
+      text-align     : center;
+      position       : relative;
+      padding-top    : 87px;
+      height         : 450px;
+      display        : flex;
+      flex-direction : column;
+      justify-content: center;
+      align-items    : center;
+
+      a {
+        display         : inline-block;
+        margin-top      : 20px;
+        background-color: $btnBackColor;
+        color           : $btnTextColor;
+        line-height     : 50px;
+        width           : 240px;
+        text-decoration : none;
+        border-radius   : 30px;
+        font-size       : 17px;
+      }
+
+      .item {
+        line-height        : 2;
+        font-size          : 30px;
+        animation-name     : zoomInDown;
+        animation-duration : 1s;
+        animation-fill-mode: both;
+        color              : white;
+      }
+
+      .item1 {
+        margin         : 10px 0 10px 0;
+        animation-delay: 0;
+      }
+
+      .item2 {
+        margin         : 0 0 20px 0;
+        animation-delay: 1s;
+      }
+
+      .item3 {
+        margin         : 0 0 20px 0;
+        animation-delay: 2s;
+      }
+
+      .item4 {
+        animation-delay: 3s;
+      }
+
+      .cubic {
+        position: absolute;
+        top     : 90px;
+        right   : 80px;
+        width   : 300px;
+      }
+    }
+  }
+
+  main {
+    background-color: #100F0F;
+
+    .video {
+      text-align: center;
+
+      h2 {
+        color    : white;
+        padding  : 50px 30px;
+        font-size: 30px;
+      }
+
+      video {
+        width : 96%;
+        margin: auto;
+      }
+    }
+
+    .gallery {
+      display        : flex;
+      flex-wrap      : wrap;
+      justify-content: space-between;
+      margin         : 100px auto 50px;
+
+      .item {
+        width        : 45%;
+        margin-bottom: 10%;
+
+        img {
+          width     : 100%;
+          transition: all 0.3s;
+
+          &:hover {
+            transform: translateY(-10px);
+          }
+        }
+      }
+    }
+
+    .more {
+      text-align    : right;
+      padding-bottom: 50px;
+
+      a {
+        display         : inline-block;
+        background-color: $btnBackColor;
+        color           : $btnTextColor;
+        padding         : 10px 30px;
+        text-decoration : none;
+        border-radius   : 30px;
+      }
+    }
+  }
+
+  footer {
+    background-color: #100F0F;
+  }
+}

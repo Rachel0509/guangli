@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+    <div id="home">
+        <header>
+            <nav class="nav-menu">
+                <div class="inner container">
+                    <a class="logo" href="./index.html"><img src="./images/logo1.png" alt=""></a>
+                    <ul>
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="banner container">
+                <img class="cubic" src="./images/icon1.png" alt="">
+                <div v-if="!showText">
+                    <p><img src="./images/name.png" alt=""></p>
+                    <a href="javascript:void(0);" @click="showText = true">Getting To Know Me!</a>
+                </div>
+                <div v-else>
+                    <p class="item item1">Hi!</p>
+                    <p class="item item2">This is Guangli Li.</p>
+                    <p class="item item3">And I graduated from Fanshawe College with a program in Interactive Media Design.</p>
+                    <p class="item item4">I will be an outstanding intersction designer.</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="video container">
+                <h2>Design Work</h2>
+                <video :src="topPortfolioVideo.url" controls></video>
+            </div>
+            <div class="gallery container">
+                <div class="item" v-for="(item,index) in topPortfolioImgs" :key="index" @click="showBigImg(item.url)"><img :src="item.url" alt=""></div>
+            </div>
+            <div class="more container">
+                <a href="./gallery.html">See More >></a>
+            </div>
+        </main>
+        <footer>
+            &copy; Copyright Guangli Li. All Rights Reserved.
+        </footer>
+
+        <lightbox ref="lightbox"></lightbox>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
