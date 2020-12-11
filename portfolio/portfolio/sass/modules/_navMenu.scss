@@ -1,0 +1,39 @@
+//Header navigation style
+.nav-menu{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    background-color: #322E4A;
+    width: 100%;
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 80px;
+        img{
+            width: 100%;
+        }
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        li{
+            a{
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 30px;
+                font-size: 24px;
+                transition: all 0.3s;
+                &:hover{
+                    color: #D4A2C8;
+                }
+                &.active{
+                    color: #D4A2C8;
+                }
+            }
+        }
+    }
+}

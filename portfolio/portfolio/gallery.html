@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+    <div id="gallery">
+        <header>
+            <nav class="nav-menu container">
+                <div class="inner container">
+                    <a class="logo" href="./index.html"><img src="./images/logo1.png" alt=""></a>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./gallery.html" class="active">Gallery</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="container">
+            <div class="title">
+                <h2>Gallery</h2>
+                <p>By -- PS,AI,C4D</p>
+            </div>
+            <div class="big-img">
+                <img :src="currentPortfolio" alt="">
+            </div>
+            <div class="img-list">
+                <div class="item" v-for="(item,index) in portfolioImgs" :key="index" @click="showBigImg(item.url)"><img :src="item.url" alt="" ></div>
+            </div>
+            <div class="detail">
+                <a href="./contact.html">Detail >></a>
+            </div>
+        </main>
+        <footer>
+            &copy; Copyright Guangli Li. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

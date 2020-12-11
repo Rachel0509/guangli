@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+    <div id="contact">
+        <header>
+            <nav class="nav-menu container">
+                <div class="inner container">
+                    <a class="logo" href="./index.html"><img src="./images/logo1.png" alt=""></a>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./contact.html" class="active">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="container">
+            <div class="title">
+                <h2>Contact</h2>
+                <p>--Hi, I'm here! Let's Work Together!</p>
+            </div>
+            <div class="inner">
+                <div class="left">
+                    <img src="./images/me.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="form">
+                        <form action="./includes/mail/send.php" method="POST" id="contact-form">
+                            <div class="name">
+                                <div class="form-item">
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" id="firstname" name="firstname" placeholder="first name">
+                                    <p class="error-msg firstname"></p>
+                                </div>
+                                <div class="form-item">
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" id="lastname" name="lastname" placeholder="last name">
+                                    <p class="error-msg lastname"></p>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" placeholder="email">
+                                <p class="error-msg email"></p>
+                            </div>
+                            <div class="form-item">
+                                <label for="message">Your Message</label>
+                                <textarea name="message" id="message" rows="10" placeholder="write your note"></textarea>
+                            </div>
+                            <div class="form-item submit">
+                                <a href="javascript:void(0);" class="submit-btn">Submit</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <h2>My Skill:</h2>
+                <div class="items">
+                    <div class="item">
+                        <div class="item-title">
+                            <h3>Code</h3>
+                            <img src="./images/code.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>HTML5</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                            <p>Vue.js</p>
+                            <p>Ajax</p>
+                            <p>SASS</p>
+                            <p>PHP</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">
+                            <h3>Design</h3>
+                            <img src="./images/design.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Photoshop</p>
+                            <p>Illustrator</p>
+                            <p>Adobe XD</p>
+                            <p>Indesign</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">
+                            <h3>Animation</h3>
+                            <img src="./images/animation.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Ciname 4D</p>
+                            <p>After effect</p>
+                            <p>Premire</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <a href="#"><img src="./images/social_icon.png" alt=""></a>
+            </div>
+        </main>
+        <footer>
+            &copy; Copyright Guangli Li. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script src="./js/components/contact.js" type="module"></script>
+</body>
+
+</html>
